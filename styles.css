@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  color: yellow;
+  transition: 0.3s;
+}
+
+footer p {
+  font-size: 14px;
+}

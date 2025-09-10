@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg sticky top-0 z-50">
+        <nav class="max-w-8xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold tracking-wide">Vikas Maurya</h1>
+            <ul class="flex gap-6 text-lg">
+                <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="projects.html" class="hover:text-yellow-300 transition">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-300 transition">Contact</a></li>
+            </ul>
+            <button onclick="toggleDarkMode()"
+                class="ml-4 bg-white text-black px-3 py-1 rounded-full shadow hover:scale-110 transition dark:bg-gray-700 dark:text-white">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <section class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition">
+                <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+                <p class="mb-4">A personal portfolio built with HTML, CSS & Tailwind. Showcases my skills and projects.
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Year: 2025</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition"> 
+                <h3 class="text-xl font-bold mb-2">E-commerce Store</h3> 
+                <p class="mb-4">An online store developed with Shopify and custom styling for modern shopping experience.</p> 
+                <p class="text-sm text-gray-500 dark:text-gray-400">Year: 2025</p> 
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition">
+                <h3 class="text-xl font-bold mb-2">Hologram Project</h3>
+                <p class="mb-4">A university project following Physics laws.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Year: 2024</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="max-w-6xl mx-auto py-12 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Hologram Project Video</h2>
+        <div class="space-y-8">
+
+            <div>
+                <video controls
+                    class="mx-auto rounded-lg shadow-lg w-full md:w-2/3 hover:scale-105 transform transition duration-500">
+                    <source src="Project.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Background Tune</h3>
+                <audio controls class="mx-auto">
+                    <source src="sound.mp3" type="audio/mp3">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
+        <div class="max-w-9xl mx-auto flex justify-between items-center">
+            <p class="text-sm">&copy; 2025 Vikas Maurya</p>
+            <p class="text-sm">All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
